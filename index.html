@@ -1,3 +1,5 @@
+  
+</head>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,77 +10,71 @@
 </head>
 <body>
     <main>
-        <h1>Contacts Us</h1>
+        <h1>Contact Us</h1>
 
         <form>
             <div>  
-               <label for="title" >Title:</label>
+               <label for="title">Title:</label>
 
-              <label for="Mr">Mr.</label>  
-              <input type="radio" name="title" value="Mr">
+               <label for="Mr">Mr.</label>  
+               <input type="radio" id="Mr" name="title" value="Mr">
                                                
-              <label for="Mrs">Mrs.</label> 
-              <input type="radio" name="title" value="Mrs">
+               <label for="Mrs">Mrs.</label> 
+               <input type="radio" id="Mrs" name="title" value="Mrs">
                
-              <label for="Ms">Ms.</label>  
-              <input type="radio" name="title" value="Ms"> 
-               
-            <div>
+               <label for="Ms">Ms.</label>  
+               <input type="radio" id="Ms" name="title" value="Ms"> 
+            </div>
 
-                <br>
+            <br>
 
             <div class="field">   
-                <label>First name:</label>
-                <input type="text" name="fname" id="name"placeholder="Ebbe"required>
+                <label for="fname">First name:</label>
+                <input type="text" name="fname" id="fname" placeholder="Ebbe" required>
             </div>
 
             <br>
 
             <div class="field">    
-                <label>Last name:</label>
-                <input type="text" name="lname" id="lname"placeholder="Gunnarsson"required>
+                <label for="lname">Last name:</label>
+                <input type="text" name="lname" id="lname" placeholder="Gunnarsson" required>
             </div>
 
             <br>
 
             <div class="field">    
-                <label>E-mail address:</label>
+                <label for="email">E-mail address:</label>
                 <input type="email" name="email" id="email" required>
             </div>
 
+            <br>
+
             <div class="field">  
+                <label for="services">Services:</label>
+                <select id="services" name="services">
+                    <option value="membership">Membership</option>
+                    <option value="payment">Payment</option>
+                    <option value="book selection">Book Selection</option>
+                </select>
+            </div>  
 
-                <br>
+            <br>
 
-                <div>
-                    <label for="services">Services:</label>
-                    <select id="services" name="services">
-                        <option value="membership">Membership</option>
-                        <option value="payment">Payment</option>
-                        <option value="book selection">Book Selection</option>
-                    </select>
-                </div>  
-                
-             <h3>How can we help you?</h3>
-              <textarea rows="5"></textarea>
-            </div>
+            <h3>How can we help you?</h3>
+            <textarea rows="5" placeholder="Your message here..." name="help"></textarea>
 
-             <br>
+            <br>
 
-              <button type="submit">Submit</button>
-              <div>
-               
-            </div>
-    
-    
-             <p>ABC Bookstore needs the contact information you provide to us to contact you
+            <button type="submit">Submit</button>
+
+            <p>
+                ABC Bookstore needs the contact information you provide to us to contact you
                 about our products and services. You can unsubscribe from these communications
                 whenever you like. For information on how to unsubscribe and our privacy practices,
-                 please review our Privacy Policy.
-               </p>
+                please review our Privacy Policy.
+            </p>
        </form>
             
     </main>
-
 </body>
 </html>
