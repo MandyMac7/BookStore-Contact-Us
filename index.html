@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <main>
+        <h1>Contacts Us</h1>
+
+        <form>
+            <div>  
+               <label for="title" >Title:</label>
+
+              <label for="Mr">Mr.</label>  
+              <input type="radio" name="title" value="Mr">
+                                               
+              <label for="Mrs">Mrs.</label> 
+              <input type="radio" name="title" value="Mrs">
+               
+              <label for="Ms">Ms.</label>  
+              <input type="radio" name="title" value="Ms"> 
+               
+            <div>
+
+                <br>
+
+            <div class="field">   
+                <label>First name:</label>
+                <input type="text" name="fname" id="name"placeholder="Ebbe"required>
+            </div>
+
+            <br>
+
+            <div class="field">    
+                <label>Last name:</label>
+                <input type="text" name="lname" id="lname"placeholder="Gunnarsson"required>
+            </div>
+
+            <br>
+
+            <div class="field">    
+                <label>E-mail address:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="field">  
+
+                <br>
+
+                <div>
+                    <label for="services">Services:</label>
+                    <select id="services" name="services">
+                        <option value="membership">Membership</option>
+                        <option value="payment">Payment</option>
+                        <option value="book selection">Book Selection</option>
+                    </select>
+                </div>  
+                
+             <h3>How can we help you?</h3>
+              <textarea rows="5"></textarea>
+            </div>
+
+             <br>
+
+              <button type="submit">Submit</button>
+              <div>
+               
+            </div>
+    
+    
+             <p>ABC Bookstore needs the contact information you provide to us to contact you
+                about our products and services. You can unsubscribe from these communications
+                whenever you like. For information on how to unsubscribe and our privacy practices,
+                 please review our Privacy Policy.
+               </p>
+       </form>
+            
+    </main>
+
+</body>
+</html>
